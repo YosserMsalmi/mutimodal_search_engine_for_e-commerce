@@ -15,7 +15,30 @@ It provides a **FastAPI backend**, a **Gradio frontend**, and can be fully conta
 -  **Docker Ready:** Fully containerized for deployment or local testing.
 
 ---
+Local Setup: 
+# Create a virtual environment
+python -m venv venv
+source venv/bin/activate    # (Windows: venv\Scripts\activate)
 
-##  Project Structure
+# Install dependencies
+pip install -r requirements.txt
 
+# Run FastAPI backend
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+---
+
+Run with Docker
+ Build the image
+docker build -t ecommerce-search .
+
+ Run the container
+docker run -p 8000:8000 -p 7860:7860 --env-file .env ecommerce-search
+
+
+In both scenarios you can access:
+
+FastAPI API: http://localhost:8000/docs
+
+Gradio app: http://localhost:7860
 
