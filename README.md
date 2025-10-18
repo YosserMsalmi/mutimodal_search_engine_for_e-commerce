@@ -15,6 +15,14 @@ It provides a **FastAPI backend**, a **Gradio frontend**, and can be fully conta
 -  **Docker Ready:** Fully containerized for deployment or local testing.
 
 ---
+
+## !!! Important Note !!!
+
+>  **Origin:**  
+> This project is based on the notebook `Qdrant+CLIP+SPLADE.ipynb` that demonstrates hybrid (dense + sparse) multimodal retrieval.  
+> The code from the notebook has been **modularized** into a clean **FastAPI application** to allow deployment, testing via API, and Dockerization.  
+> You can still refer to the original notebook for reference, experimentation, or additional model explanations.
+
 # Local Setup: 
 
 Create a virtual environment
@@ -43,5 +51,6 @@ In both scenarios you can access:
 **FastAPI API**: http://localhost:8000/docs
 
 **Gradio app**: http://localhost:7860
+
 
 
